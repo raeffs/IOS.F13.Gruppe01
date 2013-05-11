@@ -16,7 +16,6 @@
 @property int rating;
 @property int ratingCount;
 
-
-
+- (id) initWithId:(int)jokeId body:(NSString*)body date:(NSDate*)date rating:(int)rating andRatingCount:(int)ratingCount;
 
 @end
