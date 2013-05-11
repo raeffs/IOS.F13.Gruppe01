@@ -7,13 +7,20 @@
 //
 
 #import "CNFAppDelegate.h"
+#import "CNFFactsViewController.h"
 
 @implementation CNFAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+-(void) applicationDidFinishLaunching:(UIApplication *)application
 {
-    // Override point for customization after application launch.
-    return YES;
+    UITabBarController* tabBarController = [[UITabBarController alloc] init];
+    
+    CNFFactsViewController* factsViewController = [[CNFFactsViewController alloc] init];
+    
+    NSArray* controllers = [NSArray arrayWithObjects:factsViewController, nil];
+    tabBarController.viewControllers = controllers;
+    
+    self.window.rootViewController = tabBarController;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

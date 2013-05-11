@@ -25,7 +25,13 @@ static CNFDataProvider* sharedDataProvider;
 
 - (NSArray*) getAllFacts
 {
-    return NULL;
+    return [NSArray arrayWithObjects:
+            [[CNFFact alloc] initWithId:1 body:@"Chuck Norris ..." date:[NSDate date] rating:5 andRatingCount:23],
+            [[CNFFact alloc] initWithId:1 body:@"Chuck Norris 2..." date:[NSDate date] rating:3 andRatingCount:21],
+            [[CNFFact alloc] initWithId:1 body:@"Chuck Norris 3..." date:[NSDate date] rating:2 andRatingCount:12],
+            [[CNFFact alloc] initWithId:1 body:@"Chuck Norris 4..." date:[NSDate date] rating:4 andRatingCount:4],
+            [[CNFFact alloc] initWithId:1 body:@"Chuck Norris 5..." date:[NSDate date] rating:1 andRatingCount:5],
+            nil];
 }
 
 - (CNFFact*) getFactOfTheDay

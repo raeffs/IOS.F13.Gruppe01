@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64C1D2CB173E6D950034246B /* CNFFactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C1D2C9173E6D950034246B /* CNFFactsViewController.m */; };
+		64C1D2CC173E6D950034246B /* CNFFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C1D2CA173E6D950034246B /* CNFFactsViewController.xib */; };
 		CC8F53A6173E62BC00259ABF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8F53A5173E62BC00259ABF /* UIKit.framework */; };
 		CC8F53A8173E62BC00259ABF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8F53A7173E62BC00259ABF /* Foundation.framework */; };
 		CC8F53AA173E62BC00259ABF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8F53A9173E62BC00259ABF /* CoreGraphics.framework */; };
@@ -23,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64C1D2C8173E6D950034246B /* CNFFactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFactsViewController.h; sourceTree = "<group>"; };
+		64C1D2C9173E6D950034246B /* CNFFactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFactsViewController.m; sourceTree = "<group>"; };
+		64C1D2CA173E6D950034246B /* CNFFactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNFFactsViewController.xib; sourceTree = "<group>"; };
 		CC8F53A2173E62BC00259ABF /* ChuckNorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8F53A5173E62BC00259ABF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC8F53A7173E62BC00259ABF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,6 +104,9 @@
 				CC90FD10173E645A00C2DD93 /* CNFFact.m */,
 				CC90FD12173E661B00C2DD93 /* CNFDataProvider.h */,
 				CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */,
+				64C1D2C8173E6D950034246B /* CNFFactsViewController.h */,
+				64C1D2C9173E6D950034246B /* CNFFactsViewController.m */,
+				64C1D2CA173E6D950034246B /* CNFFactsViewController.xib */,
 			);
 			path = ChuckNorrisFacts;
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 				CC8F53BA173E62BC00259ABF /* Default@2x.png in Resources */,
 				CC8F53BC173E62BC00259ABF /* Default-568h@2x.png in Resources */,
 				CC8F53BF173E62BC00259ABF /* MainStoryboard.storyboard in Resources */,
+				64C1D2CC173E6D950034246B /* CNFFactsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +198,7 @@
 				CC8F53C2173E62BD00259ABF /* CNFViewController.m in Sources */,
 				CC90FD11173E645A00C2DD93 /* CNFFact.m in Sources */,
 				CC90FD14173E661B00C2DD93 /* CNFDataProvider.m in Sources */,
+				64C1D2CB173E6D950034246B /* CNFFactsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
