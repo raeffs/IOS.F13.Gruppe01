@@ -64,8 +64,9 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
-    // Configure the cell...
-    
+    CNFFact* fact = [[dataProvider getAllFacts] objectAtIndex:indexPath.row];
+    cell.textLabel.text = fact.body;
+
     return cell;
 }
 
