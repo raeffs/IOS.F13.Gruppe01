@@ -22,6 +22,8 @@
 		CC8F53C2173E62BD00259ABF /* CNFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8F53C1173E62BD00259ABF /* CNFViewController.m */; };
 		CC90FD11173E645A00C2DD93 /* CNFFact.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90FD10173E645A00C2DD93 /* CNFFact.m */; };
 		CC90FD14173E661B00C2DD93 /* CNFDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */; };
+		CC90FD18173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90FD16173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m */; };
+		CC90FD19173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC90FD17173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,9 @@
 		CC90FD10173E645A00C2DD93 /* CNFFact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFact.m; sourceTree = "<group>"; };
 		CC90FD12173E661B00C2DD93 /* CNFDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFDataProvider.h; sourceTree = "<group>"; };
 		CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFDataProvider.m; sourceTree = "<group>"; };
+		CC90FD15173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFactOfTheDayViewController.h; sourceTree = "<group>"; };
+		CC90FD16173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFactOfTheDayViewController.m; sourceTree = "<group>"; };
+		CC90FD17173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNFFactOfTheDayViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +109,15 @@
 				CC90FD10173E645A00C2DD93 /* CNFFact.m */,
 				CC90FD12173E661B00C2DD93 /* CNFDataProvider.h */,
 				CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */,
+<<<<<<< HEAD
 				64C1D2C8173E6D950034246B /* CNFFactsViewController.h */,
 				64C1D2C9173E6D950034246B /* CNFFactsViewController.m */,
 				64C1D2CA173E6D950034246B /* CNFFactsViewController.xib */,
+=======
+				CC90FD15173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.h */,
+				CC90FD16173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m */,
+				CC90FD17173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib */,
+>>>>>>> Added some stuff for FactoftheDay
 			);
 			path = ChuckNorrisFacts;
 			sourceTree = "<group>";
@@ -182,7 +193,11 @@
 				CC8F53BA173E62BC00259ABF /* Default@2x.png in Resources */,
 				CC8F53BC173E62BC00259ABF /* Default-568h@2x.png in Resources */,
 				CC8F53BF173E62BC00259ABF /* MainStoryboard.storyboard in Resources */,
+<<<<<<< HEAD
 				64C1D2CC173E6D950034246B /* CNFFactsViewController.xib in Resources */,
+=======
+				CC90FD19173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib in Resources */,
+>>>>>>> Added some stuff for FactoftheDay
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +213,11 @@
 				CC8F53C2173E62BD00259ABF /* CNFViewController.m in Sources */,
 				CC90FD11173E645A00C2DD93 /* CNFFact.m in Sources */,
 				CC90FD14173E661B00C2DD93 /* CNFDataProvider.m in Sources */,
+<<<<<<< HEAD
 				64C1D2CB173E6D950034246B /* CNFFactsViewController.m in Sources */,
+=======
+				CC90FD18173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m in Sources */,
+>>>>>>> Added some stuff for FactoftheDay
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

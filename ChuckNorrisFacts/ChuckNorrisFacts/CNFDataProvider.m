@@ -36,14 +36,17 @@ static CNFDataProvider* sharedDataProvider;
 
 - (CNFFact*) getFactOfTheDay
 {
-    CNFFact* myCNFFact = [[alloc CNFFact] init];
+    CNFFact* myCNFFact = [[CNFFact alloc] initWithId:1 body:@"FactOfTheDay" date:[NSDate date] rating:4 andRatingCount:2];
     
-
+    return myCNFFact;
+    
 }
 
 - (CNFFact*) getRandomFact
 {
-    return NULL;
+    CNFFact* myCNFFact = [[CNFFact alloc] initWithId:1 body:@"RandomFact" date:[NSDate date] rating:4 andRatingCount:2];
+    
+    return myCNFFact;
 }
 
 @end
