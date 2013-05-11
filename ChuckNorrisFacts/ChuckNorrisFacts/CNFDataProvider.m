@@ -30,7 +30,9 @@ static CNFDataProvider* sharedDataProvider;
 
 - (CNFFact*) getFactOfTheDay
 {
-    return NULL;
+    CNFFact* myCNFFact = [[alloc CNFFact] init];
+    
+
 }
 
 - (CNFFact*) getRandomFact
