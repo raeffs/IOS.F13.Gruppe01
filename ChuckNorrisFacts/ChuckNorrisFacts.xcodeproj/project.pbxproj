@@ -18,6 +18,8 @@
 		CC8F53BC173E62BC00259ABF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8F53BB173E62BC00259ABF /* Default-568h@2x.png */; };
 		CC8F53BF173E62BC00259ABF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8F53BD173E62BC00259ABF /* MainStoryboard.storyboard */; };
 		CC8F53C2173E62BD00259ABF /* CNFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8F53C1173E62BD00259ABF /* CNFViewController.m */; };
+		CC90FD11173E645A00C2DD93 /* CNFFact.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90FD10173E645A00C2DD93 /* CNFFact.m */; };
+		CC90FD14173E661B00C2DD93 /* CNFDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		CC8F53BE173E62BC00259ABF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CC8F53C0173E62BD00259ABF /* CNFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNFViewController.h; sourceTree = "<group>"; };
 		CC8F53C1173E62BD00259ABF /* CNFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNFViewController.m; sourceTree = "<group>"; };
+		CC90FD0F173E645A00C2DD93 /* CNFFact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFact.h; sourceTree = "<group>"; };
+		CC90FD10173E645A00C2DD93 /* CNFFact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFact.m; sourceTree = "<group>"; };
+		CC90FD12173E661B00C2DD93 /* CNFDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFDataProvider.h; sourceTree = "<group>"; };
+		CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFDataProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				CC8F53C0173E62BD00259ABF /* CNFViewController.h */,
 				CC8F53C1173E62BD00259ABF /* CNFViewController.m */,
 				CC8F53AC173E62BC00259ABF /* Supporting Files */,
+				CC90FD0F173E645A00C2DD93 /* CNFFact.h */,
+				CC90FD10173E645A00C2DD93 /* CNFFact.m */,
+				CC90FD12173E661B00C2DD93 /* CNFDataProvider.h */,
+				CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */,
 			);
 			path = ChuckNorrisFacts;
 			sourceTree = "<group>";
@@ -177,6 +187,8 @@
 				CC8F53B2173E62BC00259ABF /* main.m in Sources */,
 				CC8F53B6173E62BC00259ABF /* CNFAppDelegate.m in Sources */,
 				CC8F53C2173E62BD00259ABF /* CNFViewController.m in Sources */,
+				CC90FD11173E645A00C2DD93 /* CNFFact.m in Sources */,
+				CC90FD14173E661B00C2DD93 /* CNFDataProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +311,7 @@
 				CC8F53C7173E62BD00259ABF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
