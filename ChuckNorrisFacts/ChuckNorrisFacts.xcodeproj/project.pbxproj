@@ -7,128 +7,125 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64C1D2CB173E6D950034246B /* CNFFactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C1D2C9173E6D950034246B /* CNFFactsViewController.m */; };
-		64C1D2CC173E6D950034246B /* CNFFactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64C1D2CA173E6D950034246B /* CNFFactsViewController.xib */; };
-		CC8F53A6173E62BC00259ABF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8F53A5173E62BC00259ABF /* UIKit.framework */; };
-		CC8F53A8173E62BC00259ABF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8F53A7173E62BC00259ABF /* Foundation.framework */; };
-		CC8F53AA173E62BC00259ABF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8F53A9173E62BC00259ABF /* CoreGraphics.framework */; };
-		CC8F53B0173E62BC00259ABF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC8F53AE173E62BC00259ABF /* InfoPlist.strings */; };
-		CC8F53B2173E62BC00259ABF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8F53B1173E62BC00259ABF /* main.m */; };
-		CC8F53B6173E62BC00259ABF /* CNFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8F53B5173E62BC00259ABF /* CNFAppDelegate.m */; };
-		CC8F53B8173E62BC00259ABF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8F53B7173E62BC00259ABF /* Default.png */; };
-		CC8F53BA173E62BC00259ABF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8F53B9173E62BC00259ABF /* Default@2x.png */; };
-		CC8F53BC173E62BC00259ABF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8F53BB173E62BC00259ABF /* Default-568h@2x.png */; };
-		CC8F53BF173E62BC00259ABF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8F53BD173E62BC00259ABF /* MainStoryboard.storyboard */; };
-		CC8F53C2173E62BD00259ABF /* CNFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8F53C1173E62BD00259ABF /* CNFViewController.m */; };
-		CC90FD11173E645A00C2DD93 /* CNFFact.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90FD10173E645A00C2DD93 /* CNFFact.m */; };
-		CC90FD14173E661B00C2DD93 /* CNFDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */; };
-		CC90FD18173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC90FD16173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m */; };
-		CC90FD19173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC90FD17173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib */; };
+		64036D741746706F0076486D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64036D731746706F0076486D /* UIKit.framework */; };
+		64036D761746706F0076486D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64036D751746706F0076486D /* Foundation.framework */; };
+		64036D781746706F0076486D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64036D771746706F0076486D /* CoreGraphics.framework */; };
+		64036D7E1746706F0076486D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64036D7C1746706F0076486D /* InfoPlist.strings */; };
+		64036D801746706F0076486D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D7F1746706F0076486D /* main.m */; };
+		64036D841746706F0076486D /* CNFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D831746706F0076486D /* CNFAppDelegate.m */; };
+		64036D861746706F0076486D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 64036D851746706F0076486D /* Default.png */; };
+		64036D881746706F0076486D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64036D871746706F0076486D /* Default@2x.png */; };
+		64036D8A1746706F0076486D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 64036D891746706F0076486D /* Default-568h@2x.png */; };
+		64036D8D1746706F0076486D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64036D8B1746706F0076486D /* MainStoryboard.storyboard */; };
+		64036D901746706F0076486D /* CNFMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D8F1746706F0076486D /* CNFMasterViewController.m */; };
+		64036D931746706F0076486D /* CNFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D921746706F0076486D /* CNFDetailViewController.m */; };
+		64036D9B174672E70076486D /* CNFFact.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D9A174672E70076486D /* CNFFact.m */; };
+		64036D9E174673620076486D /* CNFDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D9D174673620076486D /* CNFDataProvider.m */; };
+		64036DA0174678B40076486D /* chucky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64036D9F174678B40076486D /* chucky.jpg */; };
+		64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036DA2174684940076486D /* CNFFOTDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		64C1D2C8173E6D950034246B /* CNFFactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFactsViewController.h; sourceTree = "<group>"; };
-		64C1D2C9173E6D950034246B /* CNFFactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFactsViewController.m; sourceTree = "<group>"; };
-		64C1D2CA173E6D950034246B /* CNFFactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNFFactsViewController.xib; sourceTree = "<group>"; };
-		CC8F53A2173E62BC00259ABF /* ChuckNorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC8F53A5173E62BC00259ABF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CC8F53A7173E62BC00259ABF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CC8F53A9173E62BC00259ABF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CC8F53AD173E62BC00259ABF /* ChuckNorrisFacts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChuckNorrisFacts-Info.plist"; sourceTree = "<group>"; };
-		CC8F53AF173E62BC00259ABF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CC8F53B1173E62BC00259ABF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CC8F53B3173E62BC00259ABF /* ChuckNorrisFacts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChuckNorrisFacts-Prefix.pch"; sourceTree = "<group>"; };
-		CC8F53B4173E62BC00259ABF /* CNFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNFAppDelegate.h; sourceTree = "<group>"; };
-		CC8F53B5173E62BC00259ABF /* CNFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNFAppDelegate.m; sourceTree = "<group>"; };
-		CC8F53B7173E62BC00259ABF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CC8F53B9173E62BC00259ABF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CC8F53BB173E62BC00259ABF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CC8F53BE173E62BC00259ABF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CC8F53C0173E62BD00259ABF /* CNFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNFViewController.h; sourceTree = "<group>"; };
-		CC8F53C1173E62BD00259ABF /* CNFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNFViewController.m; sourceTree = "<group>"; };
-		CC90FD0F173E645A00C2DD93 /* CNFFact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFact.h; sourceTree = "<group>"; };
-		CC90FD10173E645A00C2DD93 /* CNFFact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFact.m; sourceTree = "<group>"; };
-		CC90FD12173E661B00C2DD93 /* CNFDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFDataProvider.h; sourceTree = "<group>"; };
-		CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFDataProvider.m; sourceTree = "<group>"; };
-		CC90FD15173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFactOfTheDayViewController.h; sourceTree = "<group>"; };
-		CC90FD16173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFactOfTheDayViewController.m; sourceTree = "<group>"; };
-		CC90FD17173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CNFFactOfTheDayViewController.xib; sourceTree = "<group>"; };
+		64036D701746706F0076486D /* ChuckNorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64036D731746706F0076486D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64036D751746706F0076486D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64036D771746706F0076486D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		64036D7B1746706F0076486D /* ChuckNorrisFacts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChuckNorrisFacts-Info.plist"; sourceTree = "<group>"; };
+		64036D7D1746706F0076486D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64036D7F1746706F0076486D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64036D811746706F0076486D /* ChuckNorrisFacts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChuckNorrisFacts-Prefix.pch"; sourceTree = "<group>"; };
+		64036D821746706F0076486D /* CNFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNFAppDelegate.h; sourceTree = "<group>"; };
+		64036D831746706F0076486D /* CNFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNFAppDelegate.m; sourceTree = "<group>"; };
+		64036D851746706F0076486D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		64036D871746706F0076486D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		64036D891746706F0076486D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		64036D8C1746706F0076486D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		64036D8E1746706F0076486D /* CNFMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNFMasterViewController.h; sourceTree = "<group>"; };
+		64036D8F1746706F0076486D /* CNFMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNFMasterViewController.m; sourceTree = "<group>"; };
+		64036D911746706F0076486D /* CNFDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNFDetailViewController.h; sourceTree = "<group>"; };
+		64036D921746706F0076486D /* CNFDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNFDetailViewController.m; sourceTree = "<group>"; };
+		64036D99174672E70076486D /* CNFFact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFact.h; sourceTree = "<group>"; };
+		64036D9A174672E70076486D /* CNFFact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFact.m; sourceTree = "<group>"; };
+		64036D9C174673620076486D /* CNFDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFDataProvider.h; sourceTree = "<group>"; };
+		64036D9D174673620076486D /* CNFDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFDataProvider.m; sourceTree = "<group>"; };
+		64036D9F174678B40076486D /* chucky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chucky.jpg; sourceTree = "<group>"; };
+		64036DA1174684940076486D /* CNFFOTDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFOTDViewController.h; sourceTree = "<group>"; };
+		64036DA2174684940076486D /* CNFFOTDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFOTDViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CC8F539F173E62BC00259ABF /* Frameworks */ = {
+		64036D6D1746706F0076486D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8F53A6173E62BC00259ABF /* UIKit.framework in Frameworks */,
-				CC8F53A8173E62BC00259ABF /* Foundation.framework in Frameworks */,
-				CC8F53AA173E62BC00259ABF /* CoreGraphics.framework in Frameworks */,
+				64036D741746706F0076486D /* UIKit.framework in Frameworks */,
+				64036D761746706F0076486D /* Foundation.framework in Frameworks */,
+				64036D781746706F0076486D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC8F5399173E62BC00259ABF = {
+		64036D671746706F0076486D = {
 			isa = PBXGroup;
 			children = (
-				CC8F53AB173E62BC00259ABF /* ChuckNorrisFacts */,
-				CC8F53A4173E62BC00259ABF /* Frameworks */,
-				CC8F53A3173E62BC00259ABF /* Products */,
+				64036D791746706F0076486D /* ChuckNorrisFacts */,
+				64036D721746706F0076486D /* Frameworks */,
+				64036D711746706F0076486D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		CC8F53A3173E62BC00259ABF /* Products */ = {
+		64036D711746706F0076486D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC8F53A2173E62BC00259ABF /* ChuckNorrisFacts.app */,
+				64036D701746706F0076486D /* ChuckNorrisFacts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CC8F53A4173E62BC00259ABF /* Frameworks */ = {
+		64036D721746706F0076486D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CC8F53A5173E62BC00259ABF /* UIKit.framework */,
-				CC8F53A7173E62BC00259ABF /* Foundation.framework */,
-				CC8F53A9173E62BC00259ABF /* CoreGraphics.framework */,
+				64036D731746706F0076486D /* UIKit.framework */,
+				64036D751746706F0076486D /* Foundation.framework */,
+				64036D771746706F0076486D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CC8F53AB173E62BC00259ABF /* ChuckNorrisFacts */ = {
+		64036D791746706F0076486D /* ChuckNorrisFacts */ = {
 			isa = PBXGroup;
 			children = (
-				CC8F53B4173E62BC00259ABF /* CNFAppDelegate.h */,
-				CC8F53B5173E62BC00259ABF /* CNFAppDelegate.m */,
-				CC8F53BD173E62BC00259ABF /* MainStoryboard.storyboard */,
-				CC8F53C0173E62BD00259ABF /* CNFViewController.h */,
-				CC8F53C1173E62BD00259ABF /* CNFViewController.m */,
-				CC8F53AC173E62BC00259ABF /* Supporting Files */,
-				CC90FD0F173E645A00C2DD93 /* CNFFact.h */,
-				CC90FD10173E645A00C2DD93 /* CNFFact.m */,
-				CC90FD12173E661B00C2DD93 /* CNFDataProvider.h */,
-				CC90FD13173E661B00C2DD93 /* CNFDataProvider.m */,
-				64C1D2C8173E6D950034246B /* CNFFactsViewController.h */,
-				64C1D2C9173E6D950034246B /* CNFFactsViewController.m */,
-				64C1D2CA173E6D950034246B /* CNFFactsViewController.xib */,
-				CC90FD15173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.h */,
-				CC90FD16173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m */,
-				CC90FD17173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib */,
+				64036D9C174673620076486D /* CNFDataProvider.h */,
+				64036D9D174673620076486D /* CNFDataProvider.m */,
+				64036D99174672E70076486D /* CNFFact.h */,
+				64036D9A174672E70076486D /* CNFFact.m */,
+				64036D821746706F0076486D /* CNFAppDelegate.h */,
+				64036D831746706F0076486D /* CNFAppDelegate.m */,
+				64036D8B1746706F0076486D /* MainStoryboard.storyboard */,
+				64036D8E1746706F0076486D /* CNFMasterViewController.h */,
+				64036D8F1746706F0076486D /* CNFMasterViewController.m */,
+				64036D911746706F0076486D /* CNFDetailViewController.h */,
+				64036D921746706F0076486D /* CNFDetailViewController.m */,
+				64036DA1174684940076486D /* CNFFOTDViewController.h */,
+				64036DA2174684940076486D /* CNFFOTDViewController.m */,
+				64036D7A1746706F0076486D /* Supporting Files */,
 			);
 			path = ChuckNorrisFacts;
 			sourceTree = "<group>";
 		};
-		CC8F53AC173E62BC00259ABF /* Supporting Files */ = {
+		64036D7A1746706F0076486D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC8F53AD173E62BC00259ABF /* ChuckNorrisFacts-Info.plist */,
-				CC8F53AE173E62BC00259ABF /* InfoPlist.strings */,
-				CC8F53B1173E62BC00259ABF /* main.m */,
-				CC8F53B3173E62BC00259ABF /* ChuckNorrisFacts-Prefix.pch */,
-				CC8F53B7173E62BC00259ABF /* Default.png */,
-				CC8F53B9173E62BC00259ABF /* Default@2x.png */,
-				CC8F53BB173E62BC00259ABF /* Default-568h@2x.png */,
+				64036D9F174678B40076486D /* chucky.jpg */,
+				64036D7B1746706F0076486D /* ChuckNorrisFacts-Info.plist */,
+				64036D7C1746706F0076486D /* InfoPlist.strings */,
+				64036D7F1746706F0076486D /* main.m */,
+				64036D811746706F0076486D /* ChuckNorrisFacts-Prefix.pch */,
+				64036D851746706F0076486D /* Default.png */,
+				64036D871746706F0076486D /* Default@2x.png */,
+				64036D891746706F0076486D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -136,13 +133,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CC8F53A1173E62BC00259ABF /* ChuckNorrisFacts */ = {
+		64036D6F1746706F0076486D /* ChuckNorrisFacts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC8F53C5173E62BD00259ABF /* Build configuration list for PBXNativeTarget "ChuckNorrisFacts" */;
+			buildConfigurationList = 64036D961746706F0076486D /* Build configuration list for PBXNativeTarget "ChuckNorrisFacts" */;
 			buildPhases = (
-				CC8F539E173E62BC00259ABF /* Sources */,
-				CC8F539F173E62BC00259ABF /* Frameworks */,
-				CC8F53A0173E62BC00259ABF /* Resources */,
+				64036D6C1746706F0076486D /* Sources */,
+				64036D6D1746706F0076486D /* Frameworks */,
+				64036D6E1746706F0076486D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -150,83 +147,82 @@
 			);
 			name = ChuckNorrisFacts;
 			productName = ChuckNorrisFacts;
-			productReference = CC8F53A2173E62BC00259ABF /* ChuckNorrisFacts.app */;
+			productReference = 64036D701746706F0076486D /* ChuckNorrisFacts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CC8F539A173E62BC00259ABF /* Project object */ = {
+		64036D681746706F0076486D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CNF;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = RaffiAndStefanGmbh;
+				ORGANIZATIONNAME = "S. Bachmann & R. Fleischlin";
 			};
-			buildConfigurationList = CC8F539D173E62BC00259ABF /* Build configuration list for PBXProject "ChuckNorrisFacts" */;
+			buildConfigurationList = 64036D6B1746706F0076486D /* Build configuration list for PBXProject "ChuckNorrisFacts" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CC8F5399173E62BC00259ABF;
-			productRefGroup = CC8F53A3173E62BC00259ABF /* Products */;
+			mainGroup = 64036D671746706F0076486D;
+			productRefGroup = 64036D711746706F0076486D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC8F53A1173E62BC00259ABF /* ChuckNorrisFacts */,
+				64036D6F1746706F0076486D /* ChuckNorrisFacts */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CC8F53A0173E62BC00259ABF /* Resources */ = {
+		64036D6E1746706F0076486D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8F53B0173E62BC00259ABF /* InfoPlist.strings in Resources */,
-				CC8F53B8173E62BC00259ABF /* Default.png in Resources */,
-				CC8F53BA173E62BC00259ABF /* Default@2x.png in Resources */,
-				CC8F53BC173E62BC00259ABF /* Default-568h@2x.png in Resources */,
-				CC8F53BF173E62BC00259ABF /* MainStoryboard.storyboard in Resources */,
-				64C1D2CC173E6D950034246B /* CNFFactsViewController.xib in Resources */,
-				CC90FD19173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.xib in Resources */,
+				64036D7E1746706F0076486D /* InfoPlist.strings in Resources */,
+				64036D861746706F0076486D /* Default.png in Resources */,
+				64036D881746706F0076486D /* Default@2x.png in Resources */,
+				64036D8A1746706F0076486D /* Default-568h@2x.png in Resources */,
+				64036D8D1746706F0076486D /* MainStoryboard.storyboard in Resources */,
+				64036DA0174678B40076486D /* chucky.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CC8F539E173E62BC00259ABF /* Sources */ = {
+		64036D6C1746706F0076486D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8F53B2173E62BC00259ABF /* main.m in Sources */,
-				CC8F53B6173E62BC00259ABF /* CNFAppDelegate.m in Sources */,
-				CC8F53C2173E62BD00259ABF /* CNFViewController.m in Sources */,
-				CC90FD11173E645A00C2DD93 /* CNFFact.m in Sources */,
-				CC90FD14173E661B00C2DD93 /* CNFDataProvider.m in Sources */,
-				64C1D2CB173E6D950034246B /* CNFFactsViewController.m in Sources */,
-				CC90FD18173E6C5B00C2DD93 /* CNFFactOfTheDayViewController.m in Sources */,
+				64036D801746706F0076486D /* main.m in Sources */,
+				64036D841746706F0076486D /* CNFAppDelegate.m in Sources */,
+				64036D901746706F0076486D /* CNFMasterViewController.m in Sources */,
+				64036D931746706F0076486D /* CNFDetailViewController.m in Sources */,
+				64036D9B174672E70076486D /* CNFFact.m in Sources */,
+				64036D9E174673620076486D /* CNFDataProvider.m in Sources */,
+				64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CC8F53AE173E62BC00259ABF /* InfoPlist.strings */ = {
+		64036D7C1746706F0076486D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CC8F53AF173E62BC00259ABF /* en */,
+				64036D7D1746706F0076486D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CC8F53BD173E62BC00259ABF /* MainStoryboard.storyboard */ = {
+		64036D8B1746706F0076486D /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CC8F53BE173E62BC00259ABF /* en */,
+				64036D8C1746706F0076486D /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -234,7 +230,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CC8F53C3173E62BD00259ABF /* Debug */ = {
+		64036D941746706F0076486D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -265,7 +261,7 @@
 			};
 			name = Debug;
 		};
-		CC8F53C4173E62BD00259ABF /* Release */ = {
+		64036D951746706F0076486D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -290,7 +286,7 @@
 			};
 			name = Release;
 		};
-		CC8F53C6173E62BD00259ABF /* Debug */ = {
+		64036D971746706F0076486D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -301,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		CC8F53C7173E62BD00259ABF /* Release */ = {
+		64036D981746706F0076486D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -315,25 +311,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC8F539D173E62BC00259ABF /* Build configuration list for PBXProject "ChuckNorrisFacts" */ = {
+		64036D6B1746706F0076486D /* Build configuration list for PBXProject "ChuckNorrisFacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC8F53C3173E62BD00259ABF /* Debug */,
-				CC8F53C4173E62BD00259ABF /* Release */,
+				64036D941746706F0076486D /* Debug */,
+				64036D951746706F0076486D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC8F53C5173E62BD00259ABF /* Build configuration list for PBXNativeTarget "ChuckNorrisFacts" */ = {
+		64036D961746706F0076486D /* Build configuration list for PBXNativeTarget "ChuckNorrisFacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CC8F53C6173E62BD00259ABF /* Debug */,
-				CC8F53C7173E62BD00259ABF /* Release */,
+				64036D971746706F0076486D /* Debug */,
+				64036D981746706F0076486D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CC8F539A173E62BC00259ABF /* Project object */;
+	rootObject = 64036D681746706F0076486D /* Project object */;
 }

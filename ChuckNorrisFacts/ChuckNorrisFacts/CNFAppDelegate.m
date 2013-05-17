@@ -2,25 +2,18 @@
 //  CNFAppDelegate.m
 //  ChuckNorrisFacts
 //
-//  Created by JoeFlyclapper on 5/11/13.
-//  Copyright (c) 2013 RaffiAndStefanGmbh. All rights reserved.
+//  Created by Raphael Fleischlin on 17.05.13.
+//  Copyright (c) 2013 S. Bachmann & R. Fleischlin. All rights reserved.
 //
 
 #import "CNFAppDelegate.h"
-#import "CNFFactsViewController.h"
 
 @implementation CNFAppDelegate
 
--(void) applicationDidFinishLaunching:(UIApplication *)application
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    UITabBarController* tabBarController = [[UITabBarController alloc] init];
-    
-    CNFFactsViewController* factsViewController = [[CNFFactsViewController alloc] init];
-    
-    NSArray* controllers = [NSArray arrayWithObjects:factsViewController, nil];
-    tabBarController.viewControllers = controllers;
-    
-    self.window.rootViewController = tabBarController;
+    // Override point for customization after application launch.
+    return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -1,5 +1,5 @@
 //
-//  CNFAppDelegate.h
+//  CNFMasterViewController.h
 //  ChuckNorrisFacts
 //
 //  Created by Raphael Fleischlin on 17.05.13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CNFAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface CNFMasterViewController : UITableViewController
 
 @end

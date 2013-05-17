@@ -10,11 +10,11 @@
 
 @implementation CNFFact
 
-
-- (id) initWithId:(int)jokeId body:(NSString*)body date:(NSDate*)date rating:(int)rating andRatingCount:(int)ratingCount
+- (id) initWithId:(int)jokeId title:(NSString*)title body:(NSString*)body date:(NSDate*)date rating:(int)rating andRatingCount:(int)ratingCount
 {
     if (self = [self init]) {
-        self.jokeID = jokeId;
+        self.jokeId = jokeId;
+        self.title = title;
         self.body = body;
         self.date = date;
         self.rating = rating;

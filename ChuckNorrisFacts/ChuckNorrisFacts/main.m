@@ -2,8 +2,8 @@
 //  main.m
 //  ChuckNorrisFacts
 //
-//  Created by JoeFlyclapper on 5/11/13.
-//  Copyright (c) 2013 RaffiAndStefanGmbh. All rights reserved.
+//  Created by Raphael Fleischlin on 17.05.13.
+//  Copyright (c) 2013 S. Bachmann & R. Fleischlin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

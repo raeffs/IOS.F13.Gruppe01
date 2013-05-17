@@ -1,5 +1,5 @@
 //
-//  CNFAppDelegate.h
+//  CNFFOTDViewController.h
 //  ChuckNorrisFacts
 //
 //  Created by Raphael Fleischlin on 17.05.13.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CNFAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CNFFOTDViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
+@property (weak, nonatomic) IBOutlet UILabel *theFact;
 
 @end
