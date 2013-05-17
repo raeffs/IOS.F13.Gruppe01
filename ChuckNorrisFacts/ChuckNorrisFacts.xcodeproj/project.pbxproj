@@ -23,6 +23,12 @@
 		64036D9E174673620076486D /* CNFDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D9D174673620076486D /* CNFDataProvider.m */; };
 		64036DA0174678B40076486D /* chucky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64036D9F174678B40076486D /* chucky.jpg */; };
 		64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036DA2174684940076486D /* CNFFOTDViewController.m */; };
+		6441FCCC17469361000BDF4A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCB17469361000BDF4A /* libRestKit.a */; };
+		6441FCCF17469419000BDF4A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCD17469419000BDF4A /* MobileCoreServices.framework */; };
+		6441FCD017469419000BDF4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCE17469419000BDF4A /* SystemConfiguration.framework */; };
+		6441FCD21746949B000BDF4A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCD11746949B000BDF4A /* CFNetwork.framework */; };
+		6441FCD4174694A3000BDF4A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCD3174694A3000BDF4A /* CoreData.framework */; };
+		6441FCD6174694AB000BDF4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCD5174694AB000BDF4A /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +57,12 @@
 		64036D9F174678B40076486D /* chucky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chucky.jpg; sourceTree = "<group>"; };
 		64036DA1174684940076486D /* CNFFOTDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFOTDViewController.h; sourceTree = "<group>"; };
 		64036DA2174684940076486D /* CNFFOTDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFOTDViewController.m; sourceTree = "<group>"; };
+		6441FCCB17469361000BDF4A /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = ChuckNorrisFacts/RestKit/libRestKit.a; sourceTree = "<group>"; };
+		6441FCCD17469419000BDF4A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6441FCCE17469419000BDF4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6441FCD11746949B000BDF4A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6441FCD3174694A3000BDF4A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6441FCD5174694AB000BDF4A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6441FCD6174694AB000BDF4A /* Security.framework in Frameworks */,
+				6441FCD4174694A3000BDF4A /* CoreData.framework in Frameworks */,
+				6441FCD21746949B000BDF4A /* CFNetwork.framework in Frameworks */,
+				6441FCCF17469419000BDF4A /* MobileCoreServices.framework in Frameworks */,
+				6441FCD017469419000BDF4A /* SystemConfiguration.framework in Frameworks */,
+				6441FCCC17469361000BDF4A /* libRestKit.a in Frameworks */,
 				64036D741746706F0076486D /* UIKit.framework in Frameworks */,
 				64036D761746706F0076486D /* Foundation.framework in Frameworks */,
 				64036D781746706F0076486D /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +105,12 @@
 		64036D721746706F0076486D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6441FCD5174694AB000BDF4A /* Security.framework */,
+				6441FCD3174694A3000BDF4A /* CoreData.framework */,
+				6441FCD11746949B000BDF4A /* CFNetwork.framework */,
+				6441FCCD17469419000BDF4A /* MobileCoreServices.framework */,
+				6441FCCE17469419000BDF4A /* SystemConfiguration.framework */,
+				6441FCCB17469361000BDF4A /* libRestKit.a */,
 				64036D731746706F0076486D /* UIKit.framework */,
 				64036D751746706F0076486D /* Foundation.framework */,
 				64036D771746706F0076486D /* CoreGraphics.framework */,
@@ -291,7 +315,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChuckNorrisFacts/ChuckNorrisFacts-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ChuckNorrisFacts/RestKit\"";
 				INFOPLIST_FILE = "ChuckNorrisFacts/ChuckNorrisFacts-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ChuckNorrisFacts/RestKit\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -302,7 +331,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChuckNorrisFacts/ChuckNorrisFacts-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/ChuckNorrisFacts/RestKit\"";
 				INFOPLIST_FILE = "ChuckNorrisFacts/ChuckNorrisFacts-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ChuckNorrisFacts/RestKit\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -327,6 +361,7 @@
 				64036D981746706F0076486D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
