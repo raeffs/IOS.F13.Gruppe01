@@ -7,6 +7,14 @@
 //
 
 #import "ChuckNorrisFactsTests.h"
+#import "CNFOnlineDataProvider.h"
+
+@interface ChuckNorrisFactsTests ()
+{
+    CNFOnlineDataProvider* sut;
+}
+
+@end
 
 @implementation ChuckNorrisFactsTests
 

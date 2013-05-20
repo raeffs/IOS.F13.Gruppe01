@@ -28,6 +28,9 @@
     [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
     [[self view] addGestureRecognizer:swipeLeft];
     
+    UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
+    [[self view] addGestureRecognizer:tap];
+    
     dataProvider = [CNFOnlineDataProvider sharedDataProvider];
     headerView = [self navigationItem].titleView;
 }
@@ -41,6 +44,16 @@
 {
     NSUInteger selectedIndex = [[self tabBarController] selectedIndex];
     [[self tabBarController] setSelectedIndex:selectedIndex + 1];
+}
+
+- (void)tap:(UITapGestureRecognizer*)recoginzer
+{
+    CNFFact* fact = [dataProvider getRandomFact];
+    if (fact != nil)
+    {
+        self.navigationItem.title = @"Random";
+        self.theFact.text = fact.body;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +81,7 @@
     CNFFact* fact = [dataProvider getFactOfTheDay];
     if (fact != nil)
     {
+        self.navigationItem.title = @"FOTD";
         self.theFact.text = fact.body;
     }
 }

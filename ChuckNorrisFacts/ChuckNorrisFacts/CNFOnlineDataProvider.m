@@ -63,6 +63,10 @@ static CNFOnlineDataProvider* sharedDataProvider;
 - (CNFFact*) getRandomFact
 {
     int numberOfFacts = [self getNumberOfFacts];
+    if (numberOfFacts == 0)
+    {
+        return nil;
+    }
     int randomIndex = arc4random() % numberOfFacts;
     return [self getFactAtIndex:randomIndex];
 }
