@@ -23,8 +23,18 @@
 {
     [super viewDidLoad];
     
+    UISwipeGestureRecognizer* swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
+    [swipeLeft setDirection:UISwipeGestureRecognizerDirectionLeft];
+    [[self view] addGestureRecognizer:swipeLeft];
+    
     dataProvider = [CNFDataProvider sharedDataProvider];
     self.theFact.text = [dataProvider getFactOfTheDay].body;
+}
+
+- (void)swipeLeft:(UISwipeGestureRecognizer*)recoginzer
+{
+    NSUInteger selectedIndex = [[self tabBarController] selectedIndex];
+    [[self tabBarController] setSelectedIndex:selectedIndex + 1];
 }
 
 - (void)didReceiveMemoryWarning

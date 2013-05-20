@@ -10,7 +10,7 @@
 
 @interface CNFFact : NSObject
 
-@property int jokeId;
+@property int factId;
 @property(strong) NSString* title;
 @property(strong) NSString* body;
 @property(strong) NSDate* date;

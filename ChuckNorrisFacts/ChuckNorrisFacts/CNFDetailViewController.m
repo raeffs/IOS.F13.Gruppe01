@@ -28,6 +28,16 @@
     }
 }
 
+- (void)setSelectNextFactHandler:(void (^)(CNFDetailViewController*))handler
+{
+    selectNextFactHandler = [handler copy];
+}
+
+- (void)setSelectPreviousFactHandler:(void (^)(CNFDetailViewController*))handler
+{
+    selectPreviousFactHandler = [handler copy];
+}
+
 - (void)configureView
 {
     if (_fact) {
@@ -40,6 +50,24 @@
 {
     [super viewDidLoad];
     [self configureView];
+    
+    UISwipeGestureRecognizer* swipeUp = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeUp:)];
+    [swipeUp setDirection:UISwipeGestureRecognizerDirectionUp];
+    [[self view] addGestureRecognizer:swipeUp];
+    
+    UISwipeGestureRecognizer* swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown:)];
+    [swipeDown setDirection:UISwipeGestureRecognizerDirectionDown];
+    [[self view] addGestureRecognizer:swipeDown];
+}
+
+- (void)swipeUp:(UISwipeGestureRecognizer*)recoginzer
+{
+    selectNextFactHandler(self);
+}
+
+- (void)swipeDown:(UISwipeGestureRecognizer*)recoginzer
+{
+    selectPreviousFactHandler(self);
 }
 
 - (void)didReceiveMemoryWarning

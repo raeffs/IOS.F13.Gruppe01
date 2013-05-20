@@ -13,6 +13,7 @@
 
 @interface CNFMasterViewController () {
     CNFDataProvider* dataProvider;
+    int lastIndex;
 }
 @end
 
@@ -27,7 +28,17 @@
 {
     [super viewDidLoad];
     
+    UISwipeGestureRecognizer* swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeRight:)];
+    [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
+    [[self view] addGestureRecognizer:swipeRight];
+    
     dataProvider = [CNFDataProvider sharedDataProvider];
+}
+
+- (void)swipeRight:(UISwipeGestureRecognizer*)recoginzer
+{
+    NSUInteger selectedIndex = [[self tabBarController] selectedIndex];
+    [[self tabBarController] setSelectedIndex:selectedIndex - 1];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,9 +76,32 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        CNFFact* fact = [dataProvider getFactAtIndex:indexPath.row];
+        lastIndex = [self.tableView indexPathForSelectedRow].row;
+        CNFFact* fact = [dataProvider getFactAtIndex:lastIndex];
         [[segue destinationViewController] setFact:fact];
+        [[segue destinationViewController] setSelectNextFactHandler:^(CNFDetailViewController *controller) {
+            [self selectNextFact:controller];
+        }];
+        [[segue destinationViewController] setSelectPreviousFactHandler:^(CNFDetailViewController *controller) {
+            [self selectPreviousFact:controller];
+        }];
+    }
+}
+
+- (void)selectNextFact:(CNFDetailViewController*)controller
+{
+    if ([dataProvider getNumberOfFacts] - 1 > lastIndex)
+    {
+        lastIndex++;
+        [controller setFact:[dataProvider getFactAtIndex:lastIndex]];
+    }
+}
+
+- (void)selectPreviousFact:(CNFDetailViewController*)controller
+{
+    if (lastIndex > 0) {
+        lastIndex--;
+        [controller setFact:[dataProvider getFactAtIndex:lastIndex]];
     }
 }
 

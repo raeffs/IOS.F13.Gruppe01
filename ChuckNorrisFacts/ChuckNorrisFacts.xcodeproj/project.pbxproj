@@ -23,6 +23,7 @@
 		64036D9E174673620076486D /* CNFDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D9D174673620076486D /* CNFDataProvider.m */; };
 		64036DA0174678B40076486D /* chucky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64036D9F174678B40076486D /* chucky.jpg */; };
 		64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036DA2174684940076486D /* CNFFOTDViewController.m */; };
+		6422A24D174801AF00B4CEEF /* CNFOnlineDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6422A24C174801AF00B4CEEF /* CNFOnlineDataProvider.m */; };
 		6441FCCC17469361000BDF4A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCB17469361000BDF4A /* libRestKit.a */; };
 		6441FCCF17469419000BDF4A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCD17469419000BDF4A /* MobileCoreServices.framework */; };
 		6441FCD017469419000BDF4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCE17469419000BDF4A /* SystemConfiguration.framework */; };
@@ -57,6 +58,8 @@
 		64036D9F174678B40076486D /* chucky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chucky.jpg; sourceTree = "<group>"; };
 		64036DA1174684940076486D /* CNFFOTDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFOTDViewController.h; sourceTree = "<group>"; };
 		64036DA2174684940076486D /* CNFFOTDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFOTDViewController.m; sourceTree = "<group>"; };
+		6422A24B174801AF00B4CEEF /* CNFOnlineDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFOnlineDataProvider.h; sourceTree = "<group>"; };
+		6422A24C174801AF00B4CEEF /* CNFOnlineDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFOnlineDataProvider.m; sourceTree = "<group>"; };
 		6441FCCB17469361000BDF4A /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = ChuckNorrisFacts/RestKit/libRestKit.a; sourceTree = "<group>"; };
 		6441FCCD17469419000BDF4A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6441FCCE17469419000BDF4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -121,19 +124,21 @@
 		64036D791746706F0076486D /* ChuckNorrisFacts */ = {
 			isa = PBXGroup;
 			children = (
-				64036D9C174673620076486D /* CNFDataProvider.h */,
-				64036D9D174673620076486D /* CNFDataProvider.m */,
-				64036D99174672E70076486D /* CNFFact.h */,
-				64036D9A174672E70076486D /* CNFFact.m */,
 				64036D821746706F0076486D /* CNFAppDelegate.h */,
 				64036D831746706F0076486D /* CNFAppDelegate.m */,
-				64036D8B1746706F0076486D /* MainStoryboard.storyboard */,
-				64036D8E1746706F0076486D /* CNFMasterViewController.h */,
-				64036D8F1746706F0076486D /* CNFMasterViewController.m */,
+				64036D9C174673620076486D /* CNFDataProvider.h */,
+				64036D9D174673620076486D /* CNFDataProvider.m */,
 				64036D911746706F0076486D /* CNFDetailViewController.h */,
 				64036D921746706F0076486D /* CNFDetailViewController.m */,
+				64036D99174672E70076486D /* CNFFact.h */,
+				64036D9A174672E70076486D /* CNFFact.m */,
 				64036DA1174684940076486D /* CNFFOTDViewController.h */,
 				64036DA2174684940076486D /* CNFFOTDViewController.m */,
+				64036D8E1746706F0076486D /* CNFMasterViewController.h */,
+				64036D8F1746706F0076486D /* CNFMasterViewController.m */,
+				6422A24B174801AF00B4CEEF /* CNFOnlineDataProvider.h */,
+				6422A24C174801AF00B4CEEF /* CNFOnlineDataProvider.m */,
+				64036D8B1746706F0076486D /* MainStoryboard.storyboard */,
 				64036D7A1746706F0076486D /* Supporting Files */,
 			);
 			path = ChuckNorrisFacts;
@@ -229,6 +234,7 @@
 				64036D9B174672E70076486D /* CNFFact.m in Sources */,
 				64036D9E174673620076486D /* CNFDataProvider.m in Sources */,
 				64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */,
+				6422A24D174801AF00B4CEEF /* CNFOnlineDataProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 #import "CNFDataProvider.h"
 #import <stdlib.h>
+#import <RestKit.h>
 
 @implementation CNFDataProvider
 
