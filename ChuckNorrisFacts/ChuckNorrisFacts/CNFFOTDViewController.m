@@ -30,7 +30,10 @@
     
     dataProvider = [CNFOnlineDataProvider sharedDataProvider];
     headerView = [self navigationItem].titleView;
-    
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
     [self updateView];
 }
 
@@ -53,9 +56,9 @@
     
     [dataProvider refreshDataWithCompletitionHandler:^{
         [NSThread sleepForTimeInterval:1];
-        [self updateView];
         [aView stopAnimating];
         [self navigationItem].titleView = headerView;
+        [self updateView];
     }];
     
 }

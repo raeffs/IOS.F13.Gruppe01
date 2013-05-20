@@ -8,12 +8,13 @@
 
 #import "CNFMasterViewController.h"
 #import "CNFDetailViewController.h"
-#import "CNFDataProvider.h"
+#import "CNFOnlineDataProvider.h"
 #import "CNFFact.h"
 
 @interface CNFMasterViewController () {
-    CNFDataProvider* dataProvider;
+    CNFOnlineDataProvider* dataProvider;
     int lastIndex;
+    UIView* headerView;
 }
 @end
 
@@ -32,7 +33,13 @@
     [swipeRight setDirection:UISwipeGestureRecognizerDirectionRight];
     [[self view] addGestureRecognizer:swipeRight];
     
-    dataProvider = [CNFDataProvider sharedDataProvider];
+    dataProvider = [CNFOnlineDataProvider sharedDataProvider];
+    headerView = [self navigationItem].titleView;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self updateView];
 }
 
 - (void)swipeRight:(UISwipeGestureRecognizer*)recoginzer
@@ -103,6 +110,26 @@
         lastIndex--;
         [controller setFact:[dataProvider getFactAtIndex:lastIndex]];
     }
+}
+
+- (IBAction)refreshPressed:(UIBarButtonItem *)sender {
+    
+    UIActivityIndicatorView* aView = [[UIActivityIndicatorView alloc] init];
+    [self navigationItem].titleView = aView;
+    [aView startAnimating];
+    
+    [dataProvider refreshDataWithCompletitionHandler:^{
+        [NSThread sleepForTimeInterval:1];
+        [aView stopAnimating];
+        [self navigationItem].titleView = headerView;
+        [self updateView];
+    }];
+    
+}
+
+- (void)updateView
+{
+    [[self tableView] reloadData];
 }
 
 @end

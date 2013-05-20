@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CNFMasterViewController : UITableViewController
+- (IBAction)refreshPressed:(UIBarButtonItem *)sender;
 
 @end

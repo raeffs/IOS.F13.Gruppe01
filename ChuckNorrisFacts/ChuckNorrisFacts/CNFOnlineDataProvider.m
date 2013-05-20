@@ -34,7 +34,7 @@ static CNFOnlineDataProvider* sharedDataProvider;
 {
     if (self = [super init])
     {
-        data = [NSArray arrayWithObject:nil];
+        data = [[NSArray alloc] init];
         [RKMIMETypeSerialization registerClass:[RKNSJSONSerialization class] forMIMEType:@"text/plain"];
     }
     return self;
