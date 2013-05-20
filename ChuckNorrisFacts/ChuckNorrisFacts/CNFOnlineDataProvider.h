@@ -21,4 +21,6 @@
 
 - (void) refreshDataWithCompletitionHandler:(void(^)(void))handler;
 
+- (void) setDataForTesting:(NSArray*)dataArray;
+
 @end

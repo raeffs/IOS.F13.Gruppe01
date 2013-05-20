@@ -7,6 +7,8 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "CNFOnlineDataProvider.h"
+#import "CNFFact.h"
 
 @interface ChuckNorrisFactsTests : SenTestCase
 

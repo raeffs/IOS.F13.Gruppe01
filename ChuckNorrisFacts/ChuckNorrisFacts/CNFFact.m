@@ -10,15 +10,13 @@
 
 @implementation CNFFact
 
-- (id) initWithId:(int)factId title:(NSString*)title body:(NSString*)body date:(NSDate*)date rating:(int)rating andRatingCount:(int)ratingCount
+- (id) initWithId:(int)factId title:(NSString*)title body:(NSString*)body andIsFactOfTheDay:(BOOL)isFactOfTheDay
 {
     if (self = [self init]) {
         self.factId = factId;
         self.title = title;
         self.body = body;
-        self.date = date;
-        self.rating = rating;
-        self.ratingCount = ratingCount;
+        self.isFactOfTheDay = isFactOfTheDay;
     }
     return self;
 }

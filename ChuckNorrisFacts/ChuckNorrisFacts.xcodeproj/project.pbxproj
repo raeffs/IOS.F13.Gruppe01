@@ -20,7 +20,6 @@
 		64036D901746706F0076486D /* CNFMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D8F1746706F0076486D /* CNFMasterViewController.m */; };
 		64036D931746706F0076486D /* CNFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D921746706F0076486D /* CNFDetailViewController.m */; };
 		64036D9B174672E70076486D /* CNFFact.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D9A174672E70076486D /* CNFFact.m */; };
-		64036D9E174673620076486D /* CNFDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036D9D174673620076486D /* CNFDataProvider.m */; };
 		64036DA0174678B40076486D /* chucky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64036D9F174678B40076486D /* chucky.jpg */; };
 		64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036DA2174684940076486D /* CNFFOTDViewController.m */; };
 		6422A24D174801AF00B4CEEF /* CNFOnlineDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6422A24C174801AF00B4CEEF /* CNFOnlineDataProvider.m */; };
@@ -36,6 +35,16 @@
 		6441FCD4174694A3000BDF4A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCD3174694A3000BDF4A /* CoreData.framework */; };
 		6441FCD6174694AB000BDF4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCD5174694AB000BDF4A /* Security.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64245512174A8C64000BA0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64036D681746706F0076486D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64036D6F1746706F0076486D;
+			remoteInfo = ChuckNorrisFacts;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		64036D701746706F0076486D /* ChuckNorrisFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckNorrisFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,8 +67,6 @@
 		64036D921746706F0076486D /* CNFDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNFDetailViewController.m; sourceTree = "<group>"; };
 		64036D99174672E70076486D /* CNFFact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFact.h; sourceTree = "<group>"; };
 		64036D9A174672E70076486D /* CNFFact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFact.m; sourceTree = "<group>"; };
-		64036D9C174673620076486D /* CNFDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFDataProvider.h; sourceTree = "<group>"; };
-		64036D9D174673620076486D /* CNFDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFDataProvider.m; sourceTree = "<group>"; };
 		64036D9F174678B40076486D /* chucky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chucky.jpg; sourceTree = "<group>"; };
 		64036DA1174684940076486D /* CNFFOTDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFFOTDViewController.h; sourceTree = "<group>"; };
 		64036DA2174684940076486D /* CNFFOTDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFOTDViewController.m; sourceTree = "<group>"; };
@@ -151,8 +158,6 @@
 			children = (
 				64036D821746706F0076486D /* CNFAppDelegate.h */,
 				64036D831746706F0076486D /* CNFAppDelegate.m */,
-				64036D9C174673620076486D /* CNFDataProvider.h */,
-				64036D9D174673620076486D /* CNFDataProvider.m */,
 				64036D911746706F0076486D /* CNFDetailViewController.h */,
 				64036D921746706F0076486D /* CNFDetailViewController.m */,
 				64036D99174672E70076486D /* CNFFact.h */,
@@ -236,6 +241,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				64245513174A8C64000BA0F9 /* PBXTargetDependency */,
 			);
 			name = ChuckNorrisFactsTests;
 			productName = ChuckNorrisFactsTests;
@@ -320,7 +326,6 @@
 				64036D901746706F0076486D /* CNFMasterViewController.m in Sources */,
 				64036D931746706F0076486D /* CNFDetailViewController.m in Sources */,
 				64036D9B174672E70076486D /* CNFFact.m in Sources */,
-				64036D9E174673620076486D /* CNFDataProvider.m in Sources */,
 				64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */,
 				6422A24D174801AF00B4CEEF /* CNFOnlineDataProvider.m in Sources */,
 			);
@@ -335,6 +340,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64245513174A8C64000BA0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64036D6F1746706F0076486D /* ChuckNorrisFacts */;
+			targetProxy = 64245512174A8C64000BA0F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		64036D7C1746706F0076486D /* InfoPlist.strings */ = {
@@ -455,6 +468,7 @@
 		6433670A174A456600CC8E32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChuckNorrisFacts.app/ChuckNorrisFacts";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -470,6 +484,7 @@
 		6433670B174A456600CC8E32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChuckNorrisFacts.app/ChuckNorrisFacts";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -510,6 +525,7 @@
 				6433670B174A456600CC8E32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

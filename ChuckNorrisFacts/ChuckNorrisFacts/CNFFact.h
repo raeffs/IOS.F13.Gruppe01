@@ -13,11 +13,8 @@
 @property int factId;
 @property(strong) NSString* title;
 @property(strong) NSString* body;
-@property(strong) NSDate* date;
-@property int rating;
-@property int ratingCount;
 @property BOOL isFactOfTheDay;
 
-- (id) initWithId:(int)jokeId title:(NSString*)title body:(NSString*)body date:(NSDate*)date rating:(int)rating andRatingCount:(int)ratingCount;
+- (id) initWithId:(int)jokeId title:(NSString*)title body:(NSString*)body andIsFactOfTheDay:(BOOL)isFactOfTheDay;
 
 @end

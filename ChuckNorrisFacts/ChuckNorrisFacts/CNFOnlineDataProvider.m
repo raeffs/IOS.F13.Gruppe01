@@ -99,4 +99,9 @@ static CNFOnlineDataProvider* sharedDataProvider;
     return [[RKObjectRequestOperation alloc] initWithRequest:request responseDescriptors:@[descriptor]];
 }
 
+- (void) setDataForTesting:(NSArray*)dataArray
+{
+    data = dataArray;
+}
+
 @end
