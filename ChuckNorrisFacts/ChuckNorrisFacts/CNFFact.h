@@ -16,6 +16,7 @@
 @property(strong) NSDate* date;
 @property int rating;
 @property int ratingCount;
+@property BOOL isFactOfTheDay;
 
 - (id) initWithId:(int)jokeId title:(NSString*)title body:(NSString*)body date:(NSDate*)date rating:(int)rating andRatingCount:(int)ratingCount;
 

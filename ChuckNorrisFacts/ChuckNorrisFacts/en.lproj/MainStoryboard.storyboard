@@ -83,7 +83,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="FOTD" id="xc7-yo-fko">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="yFC-cM-lnT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="yFC-cM-lnT">
+                            <connections>
+                                <action selector="refreshPressed:" destination="wLK-ex-RzU" id="uTz-Iw-7Ut"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="theFact" destination="HNR-Fk-7Uj" id="deF-UJ-Enn"/>
@@ -193,6 +197,7 @@
         <class className="CNFFOTDViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CNFFOTDViewController.h"/>
             <relationships>
+                <relationship kind="action" name="refreshPressed:" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="theFact" candidateClass="UILabel"/>
             </relationships>
         </class>

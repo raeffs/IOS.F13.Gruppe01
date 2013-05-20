@@ -10,14 +10,15 @@
 #import "CNFFact.h"
 
 @interface CNFOnlineDataProvider : NSObject
-{
-    void (^getAllFactsCompletitionHandler)(NSArray* result);
-    void (^getAllFactsErrorHandler)(NSError* error);
-    void (^getFactOfTheDayCompletitionHandler)(CNFFact* result);
-    void (^getFactOfTheDayErrorHandler)(NSError* error);
-}
 
-- (void) getAllFactsWithCompletitionHandler:(void(^)(NSArray*))completitionHandler andErrorHandler:(void(^)(NSError*))errorHandler;
-- (void) getFactOfTheDayWithCompletitionHandler:(void(^)(CNFFact*))completitionHandler andErrorHandler:(void(^)(NSError*)) errorHandler;
++ (CNFOnlineDataProvider*) sharedDataProvider;
+
+- (int) getNumberOfFacts;
+- (NSArray*) getAllFacts;
+- (CNFFact*) getFactOfTheDay;
+- (CNFFact*) getRandomFact;
+- (CNFFact*) getFactAtIndex:(int)index;
+
+- (void) refreshDataWithCompletitionHandler:(void(^)(void))handler;
 
 @end

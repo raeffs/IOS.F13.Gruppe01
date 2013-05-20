@@ -11,5 +11,6 @@
 @interface CNFFOTDViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *theFact;
+- (IBAction)refreshPressed:(UIBarButtonItem *)sender;
 
 @end
