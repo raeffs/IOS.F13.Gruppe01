@@ -24,6 +24,11 @@
 		64036DA0174678B40076486D /* chucky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64036D9F174678B40076486D /* chucky.jpg */; };
 		64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64036DA2174684940076486D /* CNFFOTDViewController.m */; };
 		6422A24D174801AF00B4CEEF /* CNFOnlineDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6422A24C174801AF00B4CEEF /* CNFOnlineDataProvider.m */; };
+		643366FD174A456600CC8E32 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643366FC174A456600CC8E32 /* SenTestingKit.framework */; };
+		643366FE174A456600CC8E32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64036D731746706F0076486D /* UIKit.framework */; };
+		643366FF174A456600CC8E32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64036D751746706F0076486D /* Foundation.framework */; };
+		64336705174A456600CC8E32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64336703174A456600CC8E32 /* InfoPlist.strings */; };
+		64336708174A456600CC8E32 /* ChuckNorrisFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64336707174A456600CC8E32 /* ChuckNorrisFactsTests.m */; };
 		6441FCCC17469361000BDF4A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCB17469361000BDF4A /* libRestKit.a */; };
 		6441FCCF17469419000BDF4A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCD17469419000BDF4A /* MobileCoreServices.framework */; };
 		6441FCD017469419000BDF4A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6441FCCE17469419000BDF4A /* SystemConfiguration.framework */; };
@@ -60,6 +65,13 @@
 		64036DA2174684940076486D /* CNFFOTDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFFOTDViewController.m; sourceTree = "<group>"; };
 		6422A24B174801AF00B4CEEF /* CNFOnlineDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNFOnlineDataProvider.h; sourceTree = "<group>"; };
 		6422A24C174801AF00B4CEEF /* CNFOnlineDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNFOnlineDataProvider.m; sourceTree = "<group>"; };
+		643366FB174A456600CC8E32 /* ChuckNorrisFactsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChuckNorrisFactsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		643366FC174A456600CC8E32 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		64336702174A456600CC8E32 /* ChuckNorrisFactsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChuckNorrisFactsTests-Info.plist"; sourceTree = "<group>"; };
+		64336704174A456600CC8E32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		64336706174A456600CC8E32 /* ChuckNorrisFactsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChuckNorrisFactsTests.h; sourceTree = "<group>"; };
+		64336707174A456600CC8E32 /* ChuckNorrisFactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChuckNorrisFactsTests.m; sourceTree = "<group>"; };
+		64336709174A456600CC8E32 /* ChuckNorrisFactsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChuckNorrisFactsTests-Prefix.pch"; sourceTree = "<group>"; };
 		6441FCCB17469361000BDF4A /* libRestKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRestKit.a; path = ChuckNorrisFacts/RestKit/libRestKit.a; sourceTree = "<group>"; };
 		6441FCCD17469419000BDF4A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6441FCCE17469419000BDF4A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -85,6 +97,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		643366F7174A456600CC8E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				643366FD174A456600CC8E32 /* SenTestingKit.framework in Frameworks */,
+				643366FE174A456600CC8E32 /* UIKit.framework in Frameworks */,
+				643366FF174A456600CC8E32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				64036D791746706F0076486D /* ChuckNorrisFacts */,
+				64336700174A456600CC8E32 /* ChuckNorrisFactsTests */,
 				64036D721746706F0076486D /* Frameworks */,
 				64036D711746706F0076486D /* Products */,
 			);
@@ -101,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				64036D701746706F0076486D /* ChuckNorrisFacts.app */,
+				643366FB174A456600CC8E32 /* ChuckNorrisFactsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +141,7 @@
 				64036D731746706F0076486D /* UIKit.framework */,
 				64036D751746706F0076486D /* Foundation.framework */,
 				64036D771746706F0076486D /* CoreGraphics.framework */,
+				643366FC174A456600CC8E32 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +184,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		64336700174A456600CC8E32 /* ChuckNorrisFactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				64336706174A456600CC8E32 /* ChuckNorrisFactsTests.h */,
+				64336707174A456600CC8E32 /* ChuckNorrisFactsTests.m */,
+				64336701174A456600CC8E32 /* Supporting Files */,
+			);
+			path = ChuckNorrisFactsTests;
+			sourceTree = "<group>";
+		};
+		64336701174A456600CC8E32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64336702174A456600CC8E32 /* ChuckNorrisFactsTests-Info.plist */,
+				64336703174A456600CC8E32 /* InfoPlist.strings */,
+				64336709174A456600CC8E32 /* ChuckNorrisFactsTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +223,24 @@
 			productName = ChuckNorrisFacts;
 			productReference = 64036D701746706F0076486D /* ChuckNorrisFacts.app */;
 			productType = "com.apple.product-type.application";
+		};
+		643366FA174A456600CC8E32 /* ChuckNorrisFactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6433670C174A456600CC8E32 /* Build configuration list for PBXNativeTarget "ChuckNorrisFactsTests" */;
+			buildPhases = (
+				643366F6174A456600CC8E32 /* Sources */,
+				643366F7174A456600CC8E32 /* Frameworks */,
+				643366F8174A456600CC8E32 /* Resources */,
+				643366F9174A456600CC8E32 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChuckNorrisFactsTests;
+			productName = ChuckNorrisFactsTests;
+			productReference = 643366FB174A456600CC8E32 /* ChuckNorrisFactsTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -202,6 +265,7 @@
 			projectRoot = "";
 			targets = (
 				64036D6F1746706F0076486D /* ChuckNorrisFacts */,
+				643366FA174A456600CC8E32 /* ChuckNorrisFactsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,7 +284,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		643366F8174A456600CC8E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64336705174A456600CC8E32 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		643366F9174A456600CC8E32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		64036D6C1746706F0076486D /* Sources */ = {
@@ -235,6 +323,14 @@
 				64036D9E174673620076486D /* CNFDataProvider.m in Sources */,
 				64036DA3174684940076486D /* CNFFOTDViewController.m in Sources */,
 				6422A24D174801AF00B4CEEF /* CNFOnlineDataProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643366F6174A456600CC8E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64336708174A456600CC8E32 /* ChuckNorrisFactsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +351,14 @@
 				64036D8C1746706F0076486D /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		64336703174A456600CC8E32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64336704174A456600CC8E32 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -348,6 +452,36 @@
 			};
 			name = Release;
 		};
+		6433670A174A456600CC8E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChuckNorrisFactsTests/ChuckNorrisFactsTests-Prefix.pch";
+				INFOPLIST_FILE = "ChuckNorrisFactsTests/ChuckNorrisFactsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		6433670B174A456600CC8E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChuckNorrisFactsTests/ChuckNorrisFactsTests-Prefix.pch";
+				INFOPLIST_FILE = "ChuckNorrisFactsTests/ChuckNorrisFactsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -368,6 +502,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6433670C174A456600CC8E32 /* Build configuration list for PBXNativeTarget "ChuckNorrisFactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6433670A174A456600CC8E32 /* Debug */,
+				6433670B174A456600CC8E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
